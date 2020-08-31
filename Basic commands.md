@@ -88,6 +88,14 @@ The following update will find a flight having a distance to 12000 and then add 
 db.flightData.updateOne({distance: 12000}, {$set: {marker: "delete"}})
 ```
 
+## Update all elements
+
+updating all elements is as simple as using updateMany and keeping the filter with empty curly braces:
+
+```mongodb
+db.flightData.updateMany({}, {$set: {marker: "delete"}})
+```
+
 ## Replace an existing element
 
 Pending
