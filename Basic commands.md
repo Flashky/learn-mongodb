@@ -70,5 +70,11 @@ Just add ``print()`` to any sentence to a find command to make it pretty printed
 ```
 
 
+
+## Clear screen
+
+To clear your screen just type ``cls``:
+
 ```mongodb
+> cls
 ```
