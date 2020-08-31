@@ -10,6 +10,12 @@ Follow the installation steps.
 
 For Windows, install it as a **Network Service**.
 
+Official documentation:
+
+- [Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+- [macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+- [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/)
+
 # Environment variables configuration
 
 In order to use **mongo** and **mongod" commands from any folder, we need to add the bin folder to the **PATH** environment variable.
