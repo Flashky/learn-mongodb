@@ -23,7 +23,7 @@ Just use the same ``use`` command:
 switched to db shop
 ```
 
-## Create a new collection
+## Create a new collection / Inserting elements on an existing collection
 
 Syntax:
 
@@ -69,7 +69,42 @@ Just add ``print()`` to any sentence to a find command to make it pretty printed
 }
 ```
 
+## Update an existing element
 
+Update command needs two arguments:
+
+- One for filtering which element to update.
+- Another one for updating the element itself.
+
+The syntax is a bit more complicated, as you need to use a $set to specify the new or new fields:
+
+```mongodb
+db.<collection_name>.updateOne(<json_filter>, {$set: <json_new_fields>)
+```
+
+The following update will find a flight having a distance to 12000 and then add a marker field to it:
+
+```mongodb
+db.flightData.updateOne({distance: 12000}, {$set: {marker: "delete"}})
+```
+
+## Replace an existing element
+
+Pending
+
+## Deleting an existing element
+
+```mongodb
+db.products.deleteOne({name: "A Book"})
+```
+
+The previous sentence will delete the first document which has a name attribute valued as "A Book".
+
+In the case we want to delete using the id:
+
+```mongodb
+db.products.deleteOne({ _id: ObjectId("5f4cd1fe17c90fd325ac7bcf") })
+```
 
 ## Clear screen
 
