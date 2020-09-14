@@ -14,6 +14,11 @@ Example:
 
 ```mongodb
 > db.products.insertOne({name: "A Book", price: 12.99})
+```
+
+We will receive a response with the created element id:
+
+```mongodb
 {
        "acknowledged" : true,
        "insertedId" : ObjectId("5f4cd1fe17c90fd325ac7bcf")
