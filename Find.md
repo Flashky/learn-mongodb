@@ -65,8 +65,8 @@ You can filter both your ``find()`` and ``findOne()`` results by just adding a j
 Syntax:
 
 ```mongodb
-db.<collection_name>.find(<json>)
-db.<collection_name>.findOne(<json>)
+db.<collection_name>.find(<json_filter>)
+db.<collection_name>.findOne(<json_filter>)
 ```
 
 Example:
