@@ -9,3 +9,6 @@
     - [find()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#find-all-elements-from-a-collection)
     - [pretty()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#pretty-printing-results)
     - [Filtering results](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#filtering-results)
+  - [Update](https://github.com/Flashky/learn-mongodb/blob/master/Update.md)
+    - [update()](https://github.com/Flashky/learn-mongodb/blob/master/Update.md#update-an-existing-element)
+    - [updateMany()](https://github.com/Flashky/learn-mongodb/blob/master/Update.md#update-all-elements)
