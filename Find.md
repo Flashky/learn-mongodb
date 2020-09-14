@@ -41,7 +41,7 @@ Example:
 { "_id" : ObjectId("5f5f22ca599c49b894bd4950"), "departureAirport" : "LHR", "arrivalAirport" : "TXL", "aircraft" : "Airbus A320", "distance" : 950, "intercontinental" : false }
 ```
 
-## Pretty printing results
+### Pretty printing results
 
 The ``find()`` command doesn't apply identation by default, it just shows each result in a single line.
 
