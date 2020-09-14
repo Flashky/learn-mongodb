@@ -8,4 +8,4 @@
   - [Find](https://github.com/Flashky/learn-mongodb/blob/master/Find.md)
     - [find()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#find-all-elements-from-a-collection)
     - [pretty()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#pretty-printing-results)
-    - [find() with filters](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#find-with-filters)
+    - [Filtering results](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#filtering-results)
