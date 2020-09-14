@@ -58,14 +58,15 @@ Find one will find just the first result, even if there are multiple elements:
 }
 ```
 
-## Find with filters
+## Filtering results
 
-### Equals filter
+You can filter both your ``find()`` and ``findOne()`` results by just adding a json as a parameter:
 
 Syntax:
 
 ```mongodb
 db.<collection_name>.find(<json>)
+db.<collection_name>.findOne(<json>)
 ```
 
 Example:
@@ -87,7 +88,7 @@ The result will filter any elements from the collection having the intercontinen
 }
 ```
 
-### Greater than / Lesser than filters
+### Greater than / Lesser than filers
 
 In case you want any values starting from or ending at some point, then you need to use ``$gt`` or ``$lt`` keyword within curly braces.
 
