@@ -33,6 +33,7 @@ Result:
 
 ## Find with filters
 
+### Equals filter
 
 Syntax:
 
@@ -59,3 +60,31 @@ The result will filter any elements from the collection having the intercontinen
 }
 ```
 
+### Greater than / Lesser than filters
+
+In case you want any values starting from or ending at some point, then you need to use ``$gt`` or ``$lt`` keyword within curly braces.
+
+Syntax:
+
+```mongodb
+db.<collection_name>.find({<attribute>: {$gt: <value>})
+```
+
+Example:
+
+```mongodb
+> db.flightData.find({distance: {$gt: 950}}).pretty()
+```
+
+Result will be any flights having a distance greater than 950:
+
+```mongodb
+{
+        "_id" : ObjectId("5f5f22ca599c49b894bd494f"),
+        "departureAirport" : "MUC",
+        "arrivalAirport" : "SFO",
+        "aircraft" : "Airbus A380",
+        "distance" : 12000,
+        "intercontinental" : true
+}
+```
