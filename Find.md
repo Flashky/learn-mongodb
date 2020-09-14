@@ -1,36 +1,3 @@
-## Find all elements from a collection
-
-Syntax:
-
-```mongodb
-db.<collection_name>.find()
-```
-
-Example:
-
-```mongodb
-> db.products.find()
-{ "_id" : ObjectId("5f4cd1fe17c90fd325ac7bcf"), "name" : "A Book", "price" : 12.99 }
-```
-
-## Pretty printing results
-
-Just add ``print()`` to any sentence to a find command to make it pretty printed:
-
-```mongodb
-> db.products.find().pretty()
-```
-
-Result:
-
-```mongodb
-{
-       "_id" : ObjectId("5f4cd1fe17c90fd325ac7bcf"),
-       "name" : "A Book",
-       "price" : 12.99
-}
-```
-
 ## Find one element
 
 Syntax:
@@ -57,6 +24,56 @@ Find one will find just the first result, even if there are multiple elements:
         "intercontinental" : true
 }
 ```
+
+## Find all elements from a collection
+
+Syntax:
+
+```mongodb
+db.<collection_name>.find()
+```
+
+Example:
+
+```mongodb
+> db.flightData.find()
+{ "_id" : ObjectId("5f5f22ca599c49b894bd494f"), "departureAirport" : "MUC", "arrivalAirport" : "SFO", "aircraft" : "Airbus A380", "distance" : 12000, "intercontinental" : true }
+{ "_id" : ObjectId("5f5f22ca599c49b894bd4950"), "departureAirport" : "LHR", "arrivalAirport" : "TXL", "aircraft" : "Airbus A320", "distance" : 950, "intercontinental" : false }
+```
+
+## Pretty printing results
+
+The ``find()`` command doesn't apply identation by default, it just shows each result in a single line.
+
+In order to add pretty printing, just add ``print()`` at the end of the command:
+
+```mongodb
+> db.flightData.find().pretty()
+
+```
+
+Result:
+
+```mongodb
+{
+        "_id" : ObjectId("5f5f22ca599c49b894bd494f"),
+        "departureAirport" : "MUC",
+        "arrivalAirport" : "SFO",
+        "aircraft" : "Airbus A380",
+        "distance" : 12000,
+        "intercontinental" : true
+}
+{
+        "_id" : ObjectId("5f5f22ca599c49b894bd4950"),
+        "departureAirport" : "LHR",
+        "arrivalAirport" : "TXL",
+        "aircraft" : "Airbus A320",
+        "distance" : 950,
+        "intercontinental" : false
+}
+```
+
+
 
 ## Filtering results
 
