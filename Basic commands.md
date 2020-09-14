@@ -23,24 +23,6 @@ Just use the same ``use`` command:
 switched to db shop
 ```
 
-## Create a new collection / Inserting elements on an existing collection
-
-Syntax:
-
-```mongodb
-db.<collection_name>.insertOne(<json>)
-```
-
-Example:
-
-```mongodb
-> db.products.insertOne({name: "A Book", price: 12.99})
-{
-       "acknowledged" : true,
-       "insertedId" : ObjectId("5f4cd1fe17c90fd325ac7bcf")
-}
-```
-
 ## Find all elements from a collection
 
 Syntax:
