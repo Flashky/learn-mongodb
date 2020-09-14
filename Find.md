@@ -31,6 +31,33 @@ Result:
 }
 ```
 
+## Find one element
+
+Syntax:
+
+```mongodb
+db.<collection_name>.findOne()
+```
+
+Example:
+
+```mongodb
+db.flightData.findOne()
+```
+
+Find one will find just the first result, even if there are multiple elements:
+
+```mongodb
+{
+        "_id" : ObjectId("5f5f22ca599c49b894bd494f"),
+        "departureAirport" : "MUC",
+        "arrivalAirport" : "SFO",
+        "aircraft" : "Airbus A380",
+        "distance" : 12000,
+        "intercontinental" : true
+}
+```
+
 ## Find with filters
 
 ### Equals filter
