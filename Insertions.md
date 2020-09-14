@@ -22,12 +22,41 @@ Example:
 
 ## Insert multiple elements at once
 
+Syntax:
+
 ```mongodb
-db.<collection_name>.insertMany(<json>)
+db.<collection_name>.insertMany(<json_array>)
 ```
 
 Example:
 
 ```mongodb
+db.flightData.insertMany([
+  {
+    "departureAirport": "MUC",
+    "arrivalAirport": "SFO",
+    "aircraft": "Airbus A380",
+    "distance": 12000,
+    "intercontinental": true
+  },
+  {
+    "departureAirport": "LHR",
+    "arrivalAirport": "TXL",
+    "aircraft": "Airbus A320",
+    "distance": 950,
+    "intercontinental": false
+  }
+])
+```
 
+Also, we will get an acknowledge, with as may ids as inserted objects:
+
+```mongodb
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("5f5f22ca599c49b894bd494f"),
+                ObjectId("5f5f22ca599c49b894bd4950")
+        ]
+}
 ```
