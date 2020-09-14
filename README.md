@@ -5,4 +5,6 @@
   - [Insert](https://github.com/Flashky/learn-mongodb/blob/master/Insertions.md)
     - [insertOne()](https://github.com/Flashky/learn-mongodb/blob/master/Insertions.md#insert-one-element)
     - [insertMany()](https://github.com/Flashky/learn-mongodb/blob/master/Insertions.md#insert-multiple-elements-at-once)
-  - [Find]()
+  - [Find](https://github.com/Flashky/learn-mongodb/blob/master/Find.md)
+    - [find()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#find-all-elements-from-a-collection)
+    - [pretty()](https://github.com/Flashky/learn-mongodb/blob/master/Find.md#pretty-printing-results)
